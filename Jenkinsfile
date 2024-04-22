@@ -11,7 +11,7 @@ pipeline {
         stage("Build"){
             steps {
                 echo "Building the image"
-                sh "docker build -t my-note-apps ."
+                sh "docker build -t my-notes-app ."
             }
         }
         stage("Push to Docker Hub"){
